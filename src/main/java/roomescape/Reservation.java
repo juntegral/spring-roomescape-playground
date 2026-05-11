@@ -78,27 +78,5 @@ public class Reservation {
         @JsonFormat(pattern = "HH:mm")
         private LocalTime time;
 
-        public Response(Reservation reservation) {
-            this.id = reservation.getId();
-            this.name = reservation.getName();
-            this.date = reservation.getDate();
-            this.time = reservation.getTime();
-        }
 
-        public Long getId() {
-            return id;
-        }
-
-        public String getName() {
-            return name;
-        }
-
-        public LocalDate getDate() {
-            return date;
-        }
-
-        public LocalTime getTime() {
-            return time;
-        }
-    }
-}
+}}
